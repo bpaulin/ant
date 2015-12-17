@@ -6,6 +6,6 @@ while (!$ant->isOnHighway())
 {
     echo $i++;
     echo ": ";
-    $ant->run();
+    echo $ant->run();
     echo "\n";
 }
