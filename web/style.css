@@ -1,0 +1,14 @@
+h1 {
+	text-align: center;
+}
+.color {
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+}
+.white {
+	background: white;
+}
+.black {
+	background: black;
+}
