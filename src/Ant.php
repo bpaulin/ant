@@ -74,15 +74,14 @@ class Ant {
             $this->antY
         );
         $this->moveAnt();
-        return sprintf(
-            '%s, %s is %s: ant turn to %s and move to %s, %s',
-            $antX,
-            $antY,
-            ($actualColor == self::WHITE)? 'white': 'black',
-            $this->antAngle,
-            $this->antX,
-            $this->antY
-        );
+        return [
+            'X'     => $antX,
+            'Y'     => $antY,
+            'color' => ($actualColor == self::WHITE)? 'white': 'black',
+            'angle' => $this->antAngle,
+            'Xnew'  => $this->antX,
+            'Ynew'  => $this->antY
+        ];
     }
 
     /**
